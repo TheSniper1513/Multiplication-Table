@@ -1,0 +1,21 @@
+import javax.swing.JOptionPane;
+
+public class Multiplication_Table
+
+{
+ public static void main(String[] args)
+ {
+  int number;
+  String numberS;
+  int results;
+  
+  numberS = JOptionPane.showInputDialog("please enter any number ");
+  number = Integer.parseInt(numberS);
+  
+  for(int counter = 1; counter <= 10; counter++)
+  {
+   results = number * counter;
+   System.out.println(number + " * " + counter + " = " + results);
+  }
+ }
+}
